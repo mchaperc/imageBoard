@@ -3,7 +3,7 @@
 	height: 100%;
 }
 
-.pins-header {
+.posts-header {
 	background-color: $blue;
 	height: 60px;
 	position: fixed;
@@ -21,7 +21,7 @@
 	cursor: pointer;
 }
 
-.pins-create {
+.posts-create {
 	background-color: white;
 	box-shadow: 0 3px 5px rgba(0,0,0,.3);
 	display: none;
@@ -32,8 +32,8 @@
 	z-index: 2;
 }
 
-.pins-create-url,
-.pins-create-caption {
+.posts-create-url,
+.posts-create-caption {
 	@include span-columns(10);
 	@include shift(1);
 	border: 1px solid $gray;
@@ -43,7 +43,7 @@
 	padding: .7em;
 }
 
-.pins-create-cancel {
+.posts-create-cancel {
 	@include span-columns(2);
 	@include shift(6);
 	background-color: $gray;
@@ -55,7 +55,7 @@
 	margin-top: 1em;
 }
 
-.pins-create-submit {
+.posts-create-submit {
 	@include span-columns(3);
 	@include omega();
 	background-color: $green;
@@ -67,12 +67,12 @@
 	margin-top: 1em;
 }
 
-.pins-create-cancel:hover,
-.pins-create-submit:hover {
+.posts-create-cancel:hover,
+.posts-create-submit:hover {
 	cursor: pointer;
 }
 
-.pin-container {
+.post-container {
 	@include span-columns(6);
 	@include shift(3);
 	background-color: $medium-gray;
@@ -80,7 +80,7 @@
 	margin-top: 120px;
 }
 
-.pin-container-item {
+.post-container-item {
 	@include span-columns(4 of 6);
 	@include shift(1);
 	box-shadow: 0 0 5px rgba(0,0,0,.6);
@@ -90,7 +90,7 @@
 	position: relative;
 }
 
-.pin-container-item img {
+.post-container-item img {
 	max-width: 100%;
 }
 
@@ -109,6 +109,7 @@
 	background-color: white;
 	bottom: 0;
 	color: rgb(120,120,120);
+	font-weight: 100;
 	height: 60px;
 	line-height: 60px;
 	margin-bottom: 0;
@@ -121,7 +122,7 @@
 	margin-left: 1em;
 }
 
-.pins-edit {
+.posts-edit {
 	background-color: white;
 	height: 100%;
 	padding-top: 2em;
@@ -145,8 +146,8 @@
 	cursor: pointer;
 }
 
-.pins-edit-url,
-.pins-edit-caption {
+.posts-edit-url,
+.posts-edit-caption {
 	border: 1px solid $gray;
 	display: block;
 	font-size: 1em;

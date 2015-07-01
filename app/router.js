@@ -6,9 +6,10 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('pins', function() {
-  	this.route('loading');
-  	this.route('show', {path: '/:pin_id'});
+  this.route('posts', function() {
+    this.route('loading');
+    this.route('show', {path: '/:posts_id'});
+    this.route('search');
   });
 });
 

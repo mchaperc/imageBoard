@@ -1,0 +1,21 @@
+{{#each model as |post|}}
+	<div class="post-container-item">
+		{{#if isEdit}}
+			<form class="posts-edit">
+				<i class="fa fa-close" {{action 'cancel'}}></i>
+				{{input type="text" class="posts-edit-url" value=url placeholder="Image URL"}}
+				{{textarea type="text" class="posts-edit-caption" value=caption placeholder="Image Caption"}}
+				<button class="edit-submit">Save Changes</button>
+			</form>
+		{{else}}
+			{{#link-to 'posts.show' post}}
+				<img src="{{post.url}}" alt="">
+			{{/link-to}}
+				<div class="caption-container">
+				
+				<i title="edit" class="fa fa-pencil" {{action "edit"}}></i>
+				<p>{{post.caption}}</p>		
+			</div>
+		{{/if}}
+	</div>
+{{/each}}

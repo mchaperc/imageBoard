@@ -1,0 +1,35 @@
+.show-container {
+	@include outer-container(980px);
+}
+
+.show-container-item {
+	@include span-columns(5);
+	@include shift(3.5);
+	box-shadow: 0 0 5px rgba(0,0,0,.3);
+	margin-top: 15%;
+	position: relative;
+}
+
+.fa-arrow-circle-o-left {
+	font-size: 2em;
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+}
+
+.fa-arrow-circle-o-left:hover {
+	cursor: pointer;
+}
+
+.show-container-item img {
+	max-width: 100%;
+}
+
+.show-container-item-caption {
+	height: 60px;
+}
+
+.show-container-item-caption p {
+	line-height: 60px;
+	margin-left: 1em;
+}

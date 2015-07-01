@@ -1,0 +1,7 @@
+
+	<div class="outer-container">
+		{{input type="text" class="posts-create-url" value=url placeholder="Image URL"}}
+		{{textarea type="text" class="posts-create-caption" value=caption placeholder="Image Caption"}}
+		<button class="posts-create-cancel" type="reset">Cancel</button>
+		<button class="posts-create-submit" {{action 'save'}}><i class="fa fa-image"></i> Add Image</button>
+	</div>

@@ -36,7 +36,8 @@ html, body {
 	margin: auto;
 }
 
-@import 'pins-index';
+@import 'posts-index';
+@import 'posts-show';
 
 .loading-container {
 	height: 100%;
