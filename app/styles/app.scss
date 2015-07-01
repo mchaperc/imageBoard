@@ -1,0 +1,31 @@
+@import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import 'bower_components/neat/app/assets/stylesheets/neat';
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+$blue: rgb(72, 109, 153);
+$gray: rgb(182, 182, 182);
+$medium-gray: rgb(224, 225, 226);
+$light-gray: rgb(237, 238, 239);
+$green: rgb(23, 170, 86);
+
+html, body {
+	font-family: sans-serif;
+	height: 100%;
+	width: 100%;
+}
+
+.ember-application > div {
+	height: 100%;
+}
+
+.outer-container {
+	@include outer-container(980px);
+	height: 100%;
+	margin: auto;
+}
+
+@import 'pins-index';

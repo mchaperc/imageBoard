@@ -1,0 +1,13 @@
+<div class="index-container">
+	<header class="pins-header">
+		<div class="outer-container">
+			<i class="fa fa-plus-circle" {{action 'showForm'}}></i>
+		</div>
+	</header>
+
+	{{pins-create model=model action="save"}}
+	
+	{{pins-index model=model}}
+</div>
+
+{{outlet}}

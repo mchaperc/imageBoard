@@ -1,0 +1,7 @@
+
+	<div class="outer-container">
+		{{input type="text" class="pins-create-url" value=url placeholder="Image URL"}}
+		{{textarea type="text" class="pins-create-caption" value=caption placeholder="Image Caption"}}
+		<button class="pins-create-cancel" type="reset">Cancel</button>
+		<button class="pins-create-submit" {{action 'save'}}><i class="fa fa-image"></i> Add Image</button>
+	</div>

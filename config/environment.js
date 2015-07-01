@@ -2,6 +2,15 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      'default-src': "'self'",
+      'script-src': "'self' api.forecast.io",
+      'font-src': "'self' fonts.gstatic.com",
+      'connect-src': "'self' maps.googleapis.com api.parse.com",
+      'img-src': "'self'",
+      'style-src': "'self' cdnjs.cloudflare.com maxcdn.bootstrapcdn.com fonts.googleapis.com",
+      'media-src': "'self'"
+    },
     modulePrefix: 'image-board',
     environment: environment,
     baseURL: '/',
@@ -14,9 +23,9 @@ module.exports = function(environment) {
     },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
-    }
+      applicationId: 'NBJWNaL5Z6pnFQO4FMqurU51OTbUFGEqZkxPSOEZ',
+      restApiId: 'gm0RkjpsoZDhxkfkLu5OcnUzuFGCH1OgIQDOqmdB'
+    },
   };
 
   if (environment === 'development') {

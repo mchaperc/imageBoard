@@ -1,0 +1,11 @@
+{{#each model as |pin|}}
+	<div class="pin-container-item">
+		{{#link-to 'pins.show' pin}}
+			<img src="{{pin.url}}" alt="">
+		{{/link-to}}
+			<div class="caption-container">
+			<i title="edit" class="fa fa-pencil" {{action "edit"}}></i>
+			<p>{{pin.caption}}</p>
+		</div>
+	</div>
+{{/each}}

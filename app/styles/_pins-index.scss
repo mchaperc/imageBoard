@@ -1,0 +1,122 @@
+.index-container {
+	background-color: $light-gray;
+	height: 100%;
+}
+
+.pins-header {
+	background-color: $blue;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.fa-plus-circle {
+	font-size: 2em;
+	line-height: 60px;
+}
+
+.fa-plus-circle:hover {
+	cursor: pointer;
+}
+
+.pins-create {
+	background-color: white;
+	box-shadow: 0 3px 5px rgba(0,0,0,.3);
+	display: none;
+	padding: 2em;
+	position: fixed;
+	top: 60px;
+	width: 100%;
+	z-index: 2;
+}
+
+.pins-create-url,
+.pins-create-caption {
+	@include span-columns(10);
+	@include shift(1);
+	border: 1px solid $gray;
+	display: block;
+	font-size: 1.2em;
+	margin-top: 1em;
+	padding: .7em;
+}
+
+.pins-create-cancel {
+	@include span-columns(2);
+	@include shift(6);
+	background-color: $gray;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 1.2em;
+	height: 60px;
+	margin-top: 1em;
+}
+
+.pins-create-submit {
+	@include span-columns(3);
+	@include omega();
+	background-color: $green;
+	border: none;
+	border-radius: 5px;
+	color: white;
+	font-size: 1.2em;
+	height: 60px;
+	margin-top: 1em;
+}
+
+.pins-create-cancel:hover,
+.pins-create-submit:hover {
+	cursor: pointer;
+}
+
+.pin-container {
+	@include span-columns(6);
+	@include shift(3);
+	background-color: $medium-gray;
+	border: 1px solid $gray;
+	margin-top: 120px;
+}
+
+.pin-container-item {
+	@include span-columns(4 of 6);
+	@include shift(1);
+	box-shadow: 0 0 5px rgba(0,0,0,.6);
+	margin-bottom: 2em;
+	margin-top: 2em;
+	overflow: hidden;
+	position: relative;
+}
+
+.pin-contiainer-item img {
+	max-width: 100%;
+}
+
+.fa-pencil {
+	float: right;
+	margin-right: 1em;
+	margin-top: 1em;
+}
+
+.fa-pencil:hover {
+	color: black;
+	cursor: pointer;
+}
+
+.caption-container {
+	background-color: white;
+	bottom: 0;
+	color: rgb(120,120,120);
+	height: 60px;
+	line-height: 60px;
+	margin-bottom: 0;
+	overflow: scroll;
+	position: absolute;
+	width: 100%;
+}
+
+.caption-container p {
+	margin-left: 1em;
+}
