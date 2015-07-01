@@ -6,6 +6,14 @@
 	outline: none;
 }
 
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 $blue: rgb(72, 109, 153);
 $gray: rgb(182, 182, 182);
 $medium-gray: rgb(224, 225, 226);
@@ -29,3 +37,17 @@ html, body {
 }
 
 @import 'pins-index';
+
+.loading-container {
+	height: 100%;
+	font-size: 6em;
+	margin: auto;
+	text-align: center;
+	width: 50%;
+}
+
+.fa-spinner {
+	position: absolute;
+	top: 45%;
+	transform: translateY(-50%);
+}

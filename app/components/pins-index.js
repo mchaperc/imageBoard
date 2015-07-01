@@ -5,9 +5,14 @@ export default Ember.Component.extend({
 	tagName: 'div',
 	classNames: ['pin-container'],
 
+	isEdit: false,
+
 	actions: {
 		edit: function() {
-			console.log('edit');
+			this.set('isEdit', true);
+		},
+		cancel: function() {
+			this.set('isEdit', false);
 		}
 	}
 

@@ -90,7 +90,7 @@
 	position: relative;
 }
 
-.pin-contiainer-item img {
+.pin-container-item img {
 	max-width: 100%;
 }
 
@@ -119,4 +119,59 @@
 
 .caption-container p {
 	margin-left: 1em;
+}
+
+.pins-edit {
+	background-color: white;
+	height: 100%;
+	padding-top: 2em;
+	position: relative;
+	width: 100%;
+}
+
+.fa-close {
+	border: 1px solid $blue;
+	border-radius: 5px;
+	padding: .3em;
+	position: absolute;
+	right: 3%;
+	top: 3%;
+	transition: all .2s linear;
+}
+
+.fa-close:hover {
+	background-color: $blue;
+	color: white;
+	cursor: pointer;
+}
+
+.pins-edit-url,
+.pins-edit-caption {
+	border: 1px solid $gray;
+	display: block;
+	font-size: 1em;
+	margin: auto;
+	// margin-top: 1em;
+	margin-bottom: 1em;
+	padding: .7em;
+	width: 80%;
+}
+
+.edit-submit {
+	background-color: white;
+	border: 1px solid $blue;
+	border-radius: 5px;
+	color: black;
+	font-size: 1em;
+	margin-bottom: 1em;
+	margin-left: 35%;
+	padding: .3em;
+	transition: all .2s linear;
+	width: 30%;
+}
+
+.edit-submit:hover {
+	background-color: $blue;
+	color: white;
+	cursor: pointer;
 }

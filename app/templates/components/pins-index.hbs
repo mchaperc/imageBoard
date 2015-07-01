@@ -1,11 +1,21 @@
 {{#each model as |pin|}}
 	<div class="pin-container-item">
-		{{#link-to 'pins.show' pin}}
-			<img src="{{pin.url}}" alt="">
-		{{/link-to}}
-			<div class="caption-container">
-			<i title="edit" class="fa fa-pencil" {{action "edit"}}></i>
-			<p>{{pin.caption}}</p>
-		</div>
+		{{#if isEdit}}
+			<form class="pins-edit">
+				<i class="fa fa-close" {{action 'cancel'}}></i>
+				{{input type="text" class="pins-edit-url" value=url placeholder="Image URL"}}
+				{{textarea type="text" class="pins-edit-caption" value=caption placeholder="Image Caption"}}
+				<button class="edit-submit">Save Changes</button>
+			</form>
+		{{else}}
+			{{#link-to 'pins.show' pin}}
+				<img src="{{pin.url}}" alt="">
+			{{/link-to}}
+				<div class="caption-container">
+				
+				<i title="edit" class="fa fa-pencil" {{action "edit"}}></i>
+				<p>{{pin.caption}}</p>		
+			</div>
+		{{/if}}
 	</div>
 {{/each}}
