@@ -176,3 +176,26 @@
 	color: white;
 	cursor: pointer;
 }
+
+@include media(max-width $mobile) {
+	.fa-plus-circle {
+		margin-left: 1em;
+	}	
+	.posts-create-cancel {
+		@include span-columns(4);
+		@include shift(1);
+	}
+	.posts-create-submit {
+		@include span-columns(6);
+	}
+	.post-container {
+		@include span-columns(12);
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 60px;
+	}
+	.post-container-item {
+		@include span-columns(10 of 12);
+		@include shift(1);
+	}
+}
